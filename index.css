@@ -1,0 +1,15 @@
+body {
+    /* Set the background with multiple layers */
+    background: 
+      url("images/tcd_front.png") center center fixed, /* First image background */
+      linear-gradient(to bottom,#ffff, #ed7272),
+
+      url("images/Group 207.png") center center fixed; /* Second image background */
+  
+    /* Background size and positioning for each layer */
+    background-size: cover, auto, cover;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+  }
+
+
+  
