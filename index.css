@@ -1,15 +1,55 @@
 body {
+    /* Set the background color for the entire page */
+    background-color: rgb(255, 137, 137); /* Completely opaque shade */
+
     /* Set the background with multiple layers */
     background: 
-      url("images/tcd_front.png") center center fixed, /* First image background */
-      linear-gradient(to bottom,#ffff, #ed7272),
+        url("images/tcd_front.png") center top/100% auto, /* First image background (fill width, cut off height) */
+        url("images/Group 207.png") center center fixed; /* Second image background */
 
-      url("images/Group 207.png") center center fixed; /* Second image background */
-  
     /* Background size and positioning for each layer */
-    background-size: cover, auto, cover;
     background-repeat: no-repeat, no-repeat, no-repeat;
-  }
+    background-attachment: scroll, scroll, fixed;
+}
 
+.transparent-dark-div {
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.0) 0%, /* Fully transparent on the top edge */
+        rgba(0, 0, 0, 0.1) 30%, /* Lower opacity towards the top */
+        rgba(255, 110, 110, 0.4) 60%, /* Even lower opacity towards the bottom */
+        rgb(255, 137, 137) 90% /* Completely opaque shade for the bottom 10% */
+    );
+    width: 100vw; /* Set the width to fill the viewport */
+    height: auto;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0; /* Set the left property to 0 to make the div stretch to the left edge */
+    margin: 0;
+    margin-top: 30vh; /* Use viewport height units to set the top margin */
+    padding: 0; /* Remove padding */
+}
 
-  
+#title {
+    font-size: 8vw; /* Use viewport width units to set the font size */
+    padding-bottom: 5vh; /* Use viewport height units to set the padding */
+    font-family: "Lora", serif;
+    font-style: italic;
+    color: white;
+    text-align: right;
+    padding-right: 1vw;
+    margin: 0; /* Remove any default margin */
+}
+
+.members-div {
+    background: linear-gradient(
+        to bottom,
+        rgb(255, 137, 137) 0%, /* Fully opaque pink on the top edge */
+        rgb(255, 137, 137) 100% /* Completely opaque shade for the entire div */
+    );
+    width: 100vw; /* Set the width to fill the viewport */
+    height: 100vh; /* Set the height to fill the viewport */
+    position: relative;
+    margin-top: -2vh; /* Use viewport height units to set the top margin */
+}
