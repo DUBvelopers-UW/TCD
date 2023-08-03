@@ -37,7 +37,7 @@ nav ul li a {
 }
 
 nav ul li:first-child a {
-    margin-right: 45vw; /* Use vw units for margin */
+    margin-right: 50vw; /* Use vw units for margin */
 }
 
 nav ul li:last-child a {

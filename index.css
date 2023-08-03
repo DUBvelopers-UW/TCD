@@ -1,26 +1,27 @@
 body {
     /* Set the background color for the entire page */
-    background-color: rgb(255, 137, 137); /* Completely opaque shade */
+    background-color: rgb(255, 137, 137);
 
     /* Set the background with multiple layers */
     background: 
-        url("images/tcd_front.png") center top/100% auto, /* First image background (fill width, cut off height) */
-        url("images/Group 207.png") center center fixed; /* Second image background */
+      url("images/tcd_front.png") center top/100% auto, /* First image background (fill width, cut off height) */
+      
+      rgb(255, 137, 137); /* Fallback color if images don't load or for browsers that don't support multiple backgrounds */
 
     /* Background size and positioning for each layer */
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-attachment: scroll, scroll, fixed;
-}
+    background-attachment: fixed, scroll, scroll;
+  }
 
 .transparent-dark-div {
     background: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0.0) 0%, /* Fully transparent on the top edge */
         rgba(0, 0, 0, 0.1) 30%, /* Lower opacity towards the top */
-        rgba(255, 110, 110, 0.4) 60%, /* Even lower opacity towards the bottom */
-        rgb(255, 137, 137) 90% /* Completely opaque shade for the bottom 10% */
+        rgba(255, 110, 110, 0.4) 80%, /* Even lower opacity towards the bottom */
+        rgb(235, 173, 156) 95% /* Completely opaque shade for the bottom 10% */
     );
-    width: 100vw; /* Set the width to fill the viewport */
+    width: 100%; /* Set the width to fill the viewport */
     height: auto;
     position: relative;
     bottom: 0;
@@ -31,25 +32,79 @@ body {
     padding: 0; /* Remove padding */
 }
 
-#title {
-    font-size: 8vw; /* Use viewport width units to set the font size */
+#title{
+    font-size: 7vw; /* Use viewport width units to set the font size */
     padding-bottom: 5vh; /* Use viewport height units to set the padding */
     font-family: "Lora", serif;
     font-style: italic;
     color: white;
     text-align: right;
-    padding-right: 1vw;
+    padding-right: 4vw;
     margin: 0; /* Remove any default margin */
+}
+
+#desc {
+    margin-top: 15vh;
+    font-family: "Lora", serif;
+    font-style: italic;
+    color: white;
+    margin-left: 5vw;
+    font-weight: 100;
+    font-size: 2.3vw;
 }
 
 .members-div {
     background: linear-gradient(
         to bottom,
-        rgb(255, 137, 137) 0%, /* Fully opaque pink on the top edge */
-        rgb(255, 137, 137) 100% /* Completely opaque shade for the entire div */
+        rgb(235, 173, 156) 0%, /* Fully opaque pink on the top edge */
+        rgb(244, 141, 151) 100% /* Completely opaque shade for the entire div */
     );
     width: 100vw; /* Set the width to fill the viewport */
-    height: 100vh; /* Set the height to fill the viewport */
+    height: 230vh; /* Set the height to fill the viewport */
     position: relative;
-    margin-top: -2vh; /* Use viewport height units to set the top margin */
+    margin-top: -6vh; /* Use viewport height units to set the top margin */
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.twoOseven {
+    background: url("images/Group 207.png");
+    background-size: cover;
+    position: relative;
+    background-position: center top;
+    z-index: 2;
+    margin-top: -40vh;
+    height: 80vh; /* Adjust this value to control the size of the image */
+}
+
+
+#events {
+    padding-top: 13vh;
+    color: white;
+    font-size: 3.2vw;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 150;
+    margin-left: 5vw;
+}
+
+.img-container {
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.caption {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.caption h3 {
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 100;
+    text-align: center;
 }
