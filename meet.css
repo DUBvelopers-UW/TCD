@@ -1,0 +1,25 @@
+body {
+    /* Set the background color for the entire page */
+    background-color: rgb(255, 137, 137);
+
+    /* Set the background with multiple layers */
+    background:
+        url("images/IMG_7896 1.png") center top/100% auto,
+        /* First image background (fill width, cut off height) */
+
+        rgb(255, 137, 137);
+    /* Fallback color if images don't load or for browsers that don't support multiple backgrounds */
+
+    /* Background size and positioning for each layer */
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: scroll, scroll;
+    margin: 0;
+}
+
+.background-div {
+    width: 100vw;
+    /* Add margin-top to create space for the image */
+    margin-top: 85vh; /* Adjust this value based on your image's height */
+    background-image: linear-gradient(to bottom,#f29089, #F5E3D2);
+    min-height: 300vh;
+}
