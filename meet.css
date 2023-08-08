@@ -1,14 +1,13 @@
 body {
     /* Set the background color for the entire page */
-    background-color: rgb(255, 137, 137);
+    background-color: (to bottom, #ee776f, #f8d7b9);
 
     /* Set the background with multiple layers */
     background:
         url("images/IMG_7896 1.png") center top/100% auto,
         /* First image background (fill width, cut off height) */
-
-        rgb(255, 137, 137);
-    /* Fallback color if images don't load or for browsers that don't support multiple backgrounds */
+        linear-gradient(to bottom, #ee776f, #f8d7b9);
+    /* Fallback gradient if images don't load or for browsers that don't support multiple backgrounds */
 
     /* Background size and positioning for each layer */
     background-repeat: no-repeat, no-repeat;
@@ -16,10 +15,117 @@ body {
     margin: 0;
 }
 
+#main-head {
+    text-align: center;
+    margin-top: 30vh;
+    font-size: 6vw;
+    font-family: "Lora", serif;
+    font-weight: 90;
+    color: white;
+}
+
+.team-image {
+    position: absolute;
+    top: 110vh; /* Position at the top of the parent */
+    left: 0; /* Position at the left of the parent */
+    width: 30vw; /* Set a specific width for the image */
+    max-height: 100vh; /* Adjust the image height as needed */
+    margin-left: 0;
+}
+
 .background-div {
+    margin-top: 70vh;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
     width: 100vw;
-    /* Add margin-top to create space for the image */
-    margin-top: 85vh; /* Adjust this value based on your image's height */
-    background-image: linear-gradient(to bottom,#f29089, #F5E3D2);
-    min-height: 300vh;
+    padding-top: 0; /* Remove negative padding */
+    min-height: 100vh; /* Adjust as needed */
+}
+
+#introduction {
+    text-align: center;
+    margin-top: 0vh; /* Adjust as needed */
+    font-size: 6vw;
+    font-family: "Lora", serif;
+    font-weight: 90;
+    width: 50vw;
+    color: white;
+}
+
+#intro-text {
+    padding-left: 10vw;
+    font-family: "Lora", serif;
+    color: white;
+    font-size: 3.5vw;
+    font-weight: 100;
+}
+
+.intro-content {
+    display: flex;
+}
+
+#card-grid {
+    margin-top: 20vh;
+}
+
+.card {
+    margin: 4vw;
+    width: 7vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.card-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-name {
+    font-family: "DM Sans", sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.card-text {
+    font-family: "DM Sans", sans-serif;
+    color: white;
+}
+
+.card-year {
+    font-family: "DM Sans", sans-serif;
+    color: white;
+    font-style: italic;
+}
+
+.vertical-text, .vertical-text-two {
+    position: absolute;
+    top: 258vh;
+    left: 5vw;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    font-family: "DM Sans", sans-serif;
+    font-size: 6vw;
+    color: white;
+    font-weight: 150;
+    letter-spacing: 0.5vw;
+    white-space: nowrap;
+}
+
+.vertical-text-two {
+    top: 558vh;
+}
+
+.founding-members-row {
+    margin-top: 20vh; /* Adjust the value to move the row lower */
+    justify-content: center;
+    margin-bottom: 10vh;
+}
+
+.line {
+    position:absolute;
+    top: 300vh;
+    height: 200vh;
+    left: 5vw;
+    width: 1vw;
 }
