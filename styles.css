@@ -1,51 +1,50 @@
-/* Reset default list styles */
+
 ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-/* Apply Flexbox to the nav element */
+
 nav {
     color: #fff;
-    padding: 2vh; /* Use vh units for padding */
+    padding: 2vh;
     display: flex;
-    align-items: center; /* Vertically center the list items */
+    align-items: center; 
     position: relative;
 }
 
-/* Style the list items */
+
 nav ul {
     display: flex;
-    align-items: center; /* Vertically center the list items */
+    align-items: center;
 }
 
 nav ul li {
-    margin-left: 3vw; /* Use vw units for margin */
-}
+    margin-left: 3vw; 
 
-/* Style the links */
+}
 nav ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 2vh; /* Use vh units for font size */
+    font-size: 2vh;
     font-weight: 400;
     font-family: "DM Sans", sans-serif;
-    letter-spacing: 0.2vh; /* Use vh units for letter spacing */
+    letter-spacing: 0.2vh;
     font-weight: 500;
     display: inline-block;
 }
 
 nav ul li:first-child a {
-    margin-right: 64vw; /* Use vw units for margin */
+    margin-right: 62vw; 
 }
 
 nav::after {
     content: "";
     position: absolute;
-    bottom: -0.2vh; /* Use vh units for distance from the navbar */
+    bottom: -0.2vh;
     left: 0;
     width: 100%;
-    height: 0.1vh; /* Use vh units for line height */
-    background-color: #fff; /* Change this to the desired color for the line */
+    height: 0.1vh; 
+    background-color: #fff; 
 }

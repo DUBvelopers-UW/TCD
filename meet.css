@@ -112,7 +112,18 @@ body {
 }
 
 .vertical-text-two {
-    top: 560vh;
+    position: absolute;
+    top: calc(555vh);
+    left: 5vw;
+    transform: translate(-50%, 50%) rotate(-90deg);
+    font-family: "DM Sans", sans-serif;
+    font-size: 6vw;
+    color: white;
+    font-weight: 150;
+    letter-spacing: 0.5vw;
+    white-space: nowrap;
+    max-height: calc(100vh - 5vh);
+    overflow: hidden;
 }
 
 .founding-members-row {
@@ -127,4 +138,69 @@ body {
     height: 200vh;
     left: 5vw;
     width: 1vw;
+}
+
+@media screen and (max-width: 707px) {
+
+    body {
+        background: (to bottom, #ee776f, #f8d7b9);
+    }
+    
+    #main-head {
+        font-size: 8vw;
+        margin-top: 29vh;
+    }
+
+    #introduction {
+        font-size: 2.5vw;
+        width: 90%;
+    }
+
+    #intro-text {
+        font-size: 1rem;
+    }
+
+    #card-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin: 2vh auto;
+    }
+    
+    .card-row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .vertical-text, .vertical-text-two {
+        font-size: 0;
+    }
+    
+    .line {
+        width: 0;
+        height: 0;
+    }
+
+    .background-div {
+        margin-top: 20vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        width: 100vw;
+        padding-top: 0;
+        min-height: 100vh;
+    }
+
+    .team-image {
+        top: 80vh;
+    }
+
+
 }
