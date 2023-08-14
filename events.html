@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="events.css">
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6'></script>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar-google-calendar@6'></script>
 </head>
+
 <body>
     <header>
         <nav>
@@ -14,19 +18,43 @@
                 <li><a href="events.html">Events</a></li>
                 <li><a href="meet.html">Meet the Team</a></li>
                 <li><a href="about.html">About</a></li>
-                
                 <div class="contact_box">
                     <ul>
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
-                
-                
             </ul>
         </nav>
     </header>
+    <div class="calendar_bg">
+        <div id="calendar"></div>
+    </div>
+    <h1 class="centered-title">Upcoming Events</h1>
 
-    
-
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                headerToolbar: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,listYear'
+                },
+                displayEventTime: false,
+                plugins: [ 'googleCalendar' ],
+                googleCalendarApiKey: 'AIzaSyAfjyJT5Ev0R7oviPKsOfaW3bLrWFSyTig',
+                events: {
+                    googleCalendarId: '0083f940c543bcd374f326aab994a6ddd273242f3812ac74282e433f4a7e34cc@group.calendar.google.com'
+                },
+                eventClick: function(info) {
+                    window.open(info.event.url, '_blank', 'width=700,height=600');
+                    info.jsEvent.preventDefault();
+                }
+            });
+            calendar.render();
+        });
+    </script>
 </body>
+
 </html>
