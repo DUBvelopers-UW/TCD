@@ -37,21 +37,7 @@ nav ul li a {
 }
 
 nav ul li:first-child a {
-    margin-right: 50vw; /* Use vw units for margin */
-}
-
-nav ul li:last-child a {
-    color: black;
-    margin-left: -3vw; /* Use vw units for margin */
-    padding: 2.5vh; /* Use vh units for padding */
-    margin-right: 0;
-    font-weight: bold;
-}
-
-.contact_box {
-    margin-left: 3vw; /* Use vw units for margin */
-    border-radius: 40px;
-    background-color: white;
+    margin-right: 64vw; /* Use vw units for margin */
 }
 
 nav::after {
