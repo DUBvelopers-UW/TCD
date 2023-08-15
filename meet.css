@@ -148,17 +148,22 @@ body {
     }
     
     #main-head {
-        font-size: 8vw;
+        position: center;
+        font-size: 11vw;
         margin-top: 29vh;
     }
 
     #introduction {
-        font-size: 2.5vw;
+        position: center;
+        font-size: 6vw;
         width: 90%;
     }
 
     #intro-text {
-        font-size: 1rem;
+        padding-left: 2vw;
+        justify-content: center;
+        margin-top: -5vh;
+        font-size: 5vw;
     }
 
     #card-grid {

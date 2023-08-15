@@ -163,10 +163,11 @@ body {
         margin-left: 5vw;
         font-weight: 100;
         font-size: 2.3vw;
-        background: rgb(244, 141, 151); /* Set the background color here */
+        background: rgb(255, 137, 137);
     }
 
     .members-div {
+        background: rgb(255, 137, 137);
         height: auto;
     }
 
@@ -179,6 +180,7 @@ body {
         padding-top: 5vh;
         text-align: center; 
         font-size: 5vw; 
+        background-color: (255, 137, 137);
         margin-left: 2vw; 
     }
 

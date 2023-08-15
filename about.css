@@ -90,6 +90,41 @@ body {
     background: radial-gradient(circle, #FFD481, #F2ADAD, #F4B18D);
     margin-top: 65vh;
 }
+
 @media screen and (max-width: 768px) {
-    
+    body {
+        background: radial-gradient(circle, #FFD481, #F2ADAD, #F4B18D);
+    }
+
+    .title {
+        font-size: 10vw;
+    }
+
+    .title-p {
+        font-size: 5vw;
+    }
+
+    .fan {
+        display: none;
+    }
+
+    .gallery-container {
+        font-size: 10vw;
+        margin-top: 0vh;
+        color: #FFFAF0;
+        text-align: center;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .gallery img {
+        width: 80%;
+        justify-content: center;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+        height: auto;
+    }
 }
