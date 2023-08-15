@@ -37,6 +37,10 @@ body {
     .centered-title {
         font-size: 6vw;
     }
+
+    body {
+        background: radial-gradient(circle, #FFD481, #F2ADAD, #F4B18D);
+    }
     
     .calendar-wrapper {
         padding: 10% 0;
@@ -44,6 +48,6 @@ body {
     
     .calendar-wrapper iframe {
         width: 90vw;
-        height: 60vh;
+        height: 90vw;
     }
 }
