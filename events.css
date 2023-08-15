@@ -9,20 +9,18 @@ body {
 }
 
 .centered-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-family: "Lora", serif;
     text-align: center;
-    font-size: 5vw;
-    font-weight: bold;
+    margin-top: 35vh;
+    font-size: 8vw;
+    font-family: "Lora", serif;
+    font-weight: 90;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .calendar-wrapper {
     display: flex;
-    margin-top: 100vh;
+    margin-top: 45vh;
     justify-content: center;
     align-items: center;
     padding: 5% 0;
@@ -30,8 +28,8 @@ body {
 
 .calendar-wrapper iframe {
     border: 0;
-    width: 80vw;
-    max-width: 800px;
+    width: 100vw;
+    max-width: 900px;
     height: 80vh;
 }
 

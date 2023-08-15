@@ -32,6 +32,7 @@ body {
     margin-top: 20vh;
     margin-left: 10vw;
     margin-bottom: -23vh;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .title-p {

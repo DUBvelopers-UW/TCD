@@ -16,11 +16,12 @@ body {
 
 #main-head {
     text-align: center;
-    margin-top: 30vh;
+    margin-top: 38vh;
     font-size: 6vw;
     font-family: "Lora", serif;
     font-weight: 90;
     color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .team-image {

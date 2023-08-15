@@ -19,8 +19,8 @@ nav {
 
 nav.scrolled {
     background-color: rgba(255, 141, 141, 0.8);
-    backdrop-filter: blur(10px);
-    transition: background-color 0.5s ease-in-out, backdrop-filter 0.3s ease-in-out;
+    backdrop-filter: blur(1vh);
+    transition: background-color 0.5s ease-in-out, backdrop-filter 0.5s ease-in-out;
 }
 
 
