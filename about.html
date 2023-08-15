@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="about.css">
+    <script>
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            const scrolled = window.scrollY > 0;
+            if (scrolled) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
 </head>
 
 <body>
@@ -24,42 +35,53 @@
     </header>
     <div class="content">
        <h1 class="title">TCD @ UW <br><span class="title-p">—aims to spread Chinese culture in the greater Seattle area through events like performances and workshops.</span></h1>
-       
     </div>
-    <div class="calendar_bg">
-        
-        <div class="contact">
-            <div class="left">
-                To get in touch with us, email tcduw@uw.edu or check out our Interest Form and Remind!
+        <div class="secondary-content">
+            <div class="contact">
+                <div class="left">
+                    To get in touch with us, email tcduw@uw.edu or check out our interest form!
+                </div>
+                <div class="right">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdNjOtd9V1_eakFa-WdL6v6fPOm7ek07fLi8zAF1WeiGTwOeg/viewform" class="btn">
+                        Interest Form
+                    </a>
+                    <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=tcdanceuw@gmail.com" class="btn">
+                        Email
+                    </a>
+                </div>
             </div>
-            <div class="right">
-                <button class="btn">
-                    Interest Form
-                </button>
-                <button class="btn">
-                    Remind
-                </button>
-            </div>
-        </div>
         
+            <div class="gallery-container">
+                <div class="fan">
+                    <img src="images/Group 117.png">
+                </div>
+                <div class="gallery" style="display: flex; flex-wrap: wrap; gap: 2vh; padding: 2vh;">
+                    <h1 style="font-size: 7vw; font-weight: 100; width: 100%;">Gallery</h1>
+                    <!-- <p style="font-size: 3vw; margin-bottom: 5vh; width: 100%;">“Your performance was so beautiful...<br>
+                        It reminded me of the beauty and diversity of Chinese culture<br>
+                        that I, as a Chinese person, had forgotten to appreciate and be proud of...”
+                    </p> -->
+                    <div style="display: flex; flex-wrap: wrap; gap: 2vh; width: 100%;">
+                        <img src="images/1.png" style="flex: 1; max-width: 49%; height: auto;">
+                        <img src="images/5.png" style="flex: 1; max-width: 49%; height: auto;">
+                    </div>
+                    <div style="display: flex; flex-wrap: wrap; gap: 2vh; width: 100%;">
+                        <img src="images/4.png" style="flex: 1; width: 100%; height: auto;">
+                    </div>
+                    <div style="display: flex; flex-wrap: wrap; gap: 2vh; width: 100%;">
+                        <img src="images/2.png" style="flex: 1; max-width: 49%; height: auto;">
+                        <img src="images/3.png" style="flex: 1; max-width: 49%; height: auto;">
+                    </div>
 
-        <div class="gallery-container">
-            <div class="fan">
-                <img src="images/Group165.png">
-            </div>
-            <div class="gallery">
-                <h1 style="font-size: 60px; font-weight: 100;">Gallery</h1>
-                <p style="font-size: 30px;margin-bottom: 50px;">“Your performance was so beautiful...  <br>
-                    It reminded me the beauty and diversity of Chinese culture <br>
-                    that I, as a Chinese person, had forgotten to appreciate and be proud of...”
-                </p>
-                <img src="images/1.png">
-                <img src="images/2.png">
-                <img src="images/4.png">
-                <img src="images/5.png">
-                <img src="images/3.png">
+                    <div style="display:flex; flex-wrap: wrap; gap: 2vh; width: 100%;">
+                        <img src="images/Screenshot 2023-08-14 at 11.25.00 PM.png" style="flex: 1; width: 100%; height: auto;">
+                    </div>
+
+                </div>
+                
             </div>
         </div>
+        
     </div>
     
 </body>

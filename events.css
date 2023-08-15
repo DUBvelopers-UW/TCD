@@ -1,35 +1,51 @@
-body {
+body, h1 {
     margin: 0;
     padding: 0;
-    position: relative;
+}
+
+body {
     background: url(images/event_landing.png) no-repeat center center fixed;
     background-size: cover;
 }
 
 .centered-title {
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
     color: white;
     font-family: "Lora", serif;
-    margin: 0;
     text-align: center;
-    margin-top: 30vh;
-    font-size: 8.4vw;
-    font-weight: 10;
+    font-size: 5vw;
+    font-weight: bold;
 }
 
-.content {
-    padding: 10vh 0;
-    text-align: center;
+.calendar-wrapper {
+    display: flex;
+    margin-top: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0;
 }
 
-.calendar_bg {
-    background: linear-gradient(to bottom, #ea7271, #fcc2b1);
-    text-align: center;
-    padding: 10vh 0;
-    position: relative;
-    top: 35vh;
+.calendar-wrapper iframe {
+    border: 0;
+    width: 80vw;
+    max-width: 800px;
+    height: 80vh;
+}
+
+@media screen and (max-width: 768px) {
+    .centered-title {
+        font-size: 6vw;
+    }
+    
+    .calendar-wrapper {
+        padding: 10% 0;
+    }
+    
+    .calendar-wrapper iframe {
+        width: 90vw;
+        height: 60vh;
+    }
 }

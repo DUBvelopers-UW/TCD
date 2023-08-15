@@ -113,7 +113,7 @@ body {
 
 .vertical-text-two {
     position: absolute;
-    top: calc(555vh);
+    top: calc(540vh);
     left: 5vw;
     transform: translate(-50%, 50%) rotate(-90deg);
     font-family: "DM Sans", sans-serif;

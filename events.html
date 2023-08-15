@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="events.css">
+    <script>
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            const scrolled = window.scrollY > 0;
+            if (scrolled) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6'></script>
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar-google-calendar@6'></script>
 </head>
@@ -27,8 +38,8 @@
     <div class="content">
         <h1 class="centered-title">Upcoming Events</h1>
     </div>
-    <div class="calendar_bg">
-        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffbaba&ctz=America%2FLos_Angeles&showTz=0&showCalendars=0&showTabs=0&showPrint=0&showDate=1&showNav=1&showTitle=0&src=MDA4M2Y5NDBjNTQzYmNkMzc0ZjMyNmFhYjk5NGE2ZGRkMjczMjQyZjM4MTJhYzc0MjgyZTQzM2Y0YTdlMzRjY0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23E67C73" style="border-width:0" width="1000" height="750" frameborder="0" scrolling="no"></iframe>
+    <div class="calendar-wrapper">
+        <iframe src="https://calendar.google.com/calendar/embed?src=0083f940c543bcd374f326aab994a6ddd273242f3812ac74282e433f4a7e34cc%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
     </div>
 </body>
 

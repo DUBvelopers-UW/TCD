@@ -52,7 +52,7 @@ body {
             rgb(244, 141, 151) 100%
         );
     width: 100vw;
-    height: 230vh;
+    height: 280vh;
     position: relative;
     margin-top: -8vh;
     left: 0;
@@ -65,13 +65,12 @@ body {
     background-size: cover;
     position: relative;
     background-position: center top;
-    z-index: 2;
-    margin-top: -40vh;
+    z-index: 1; /* Updated z-index value */
     height: 80vh;
 }
 
-
 #events {
+    font-style: italic;
     padding-top: 13vh;
     color: white;
     font-size: 3.2vw;
@@ -101,6 +100,44 @@ body {
     text-align: center;
 }
 
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 3vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.image-container a {
+    flex-direction: row;
+    flex: 0 0 100%;
+    max-width: 30%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 2vh;
+}
+
+.image-container a img {
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+}
+
+.image-container a:hover {
+    transform: scale(1.05);
+    transition: transform 0.6s ease;
+}
+
+
+@media (max-width: 768px) {
+    .image-container a {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
 @media (max-width: 768px) {
 
     body {
@@ -108,7 +145,7 @@ body {
     }
     
     .transparent-dark-div {
-        margin-top: 10vh; /* Adjust margin for better spacing */
+        margin-top: 10vh;
     }
 
     #title {
@@ -118,9 +155,14 @@ body {
     }
 
     #desc {
-        margin: 5vh 2vw; 
-        text-align: center; 
-        font-size: 4vw; 
+        margin-top: 15vh;
+        font-family: "Lora", serif;
+        font-style: italic;
+        color: white;
+        margin-left: 5vw;
+        font-weight: 100;
+        font-size: 2.3vw;
+        background: rgb(244, 141, 151); /* Set the background color here */
     }
 
     .members-div {
@@ -150,4 +192,9 @@ body {
     .caption {
         text-align: center;
     }
+    
+    #desc {
+        font-size: 10vw;
+    }
+
 }
